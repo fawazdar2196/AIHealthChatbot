@@ -1,0 +1,6 @@
+streamlit
+openai
+streamlit-player
+hashlib
+smtplib
+email
