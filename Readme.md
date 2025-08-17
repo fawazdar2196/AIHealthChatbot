@@ -1,91 +1,73 @@
-MUNKind Chatbot Application
+# 🤖 MUNKind Chatbot Application  
 
-Overview
+A **compassionate mental health assistant** for students at **Memorial University of Newfoundland**.  
+The chatbot provides **mental health advice**, tracks **chat history**, and can send **emergency alerts** to university mental health services if self-harm-related keywords are detected.  
 
-The MUNKind Chatbot is a compassionate mental health assistant for students at Memorial University of Newfoundland. This chatbot provides mental health advice, tracks chat history, and can alert university mental health services in case of emergency situations.
+---
 
-Files in the Project
+## 📖 Overview  
 
-1. app.py
+The **MUNKind Chatbot** helps students by:  
+- Offering **mental health guidance** through a friendly chat interface.  
+- **Detecting emergencies** and alerting university services via email.  
+- **Saving chat history** for each user.  
+- Supporting a **custom chatbot personality** defined in `persona.txt`.  
 
-This is the main file that contains:
+---
 
-Login/Register System: Enables users to register with their username, email, and phone number and securely log in.
-Chat Interface: Allows users to chat with the chatbot and displays responses.
-Alert Email System: Sends an email to alert mental health services if any self-harm-related keywords are detected.
-Chat History: Saves user chats and enables users to view their chat history.
+## 📂 Files in the Project  
 
-2. users.txt
+### 1. `app.py`  
+The **main application file**, containing:  
+- **Login/Register System**: Securely register with username, email, and phone number.  
+- **Chat Interface**: Chat with the mental health assistant.  
+- **Alert Email System**: Sends alerts when self-harm keywords are detected.  
+- **Chat History**: Stores conversations per user.  
 
-This file stores user data in the following format:
+---
 
+### 2. `users.txt`  
+Stores registered user data in the format:  
 
-username,password_hash,email,phone
-username: User's chosen username.
-password_hash: A hashed version of the user's password for security.
-email: User's email address.
-phone: User's phone number.
+- **username** → chosen username  
+- **password_hash** → securely hashed password  
+- **email** → user’s email  
+- **phone** → user’s phone number  
 
-3. persona.txt
+---
 
-This file defines the chatbot's personality and behavior.
+### 3. `persona.txt`  
+Defines the chatbot’s **personality and behavior**.  
 
-It contains guidelines about how the chatbot should respond to user queries and what resources it should suggest.
-If this file is missing, a default persona is used.
+- Provides guidelines for chatbot responses.  
+- Suggests resources for students.  
+- If missing, a **default persona** is used.  
 
-4. history_<username>.txt
+---
 
-A separate file is created for each user to save their chat history.
-Format: Alternating user and chatbot messages are stored.
+### 4. `history_<username>.txt`  
+Stores chat history for each user.  
 
-5. Logo.png and Logo2.png
+- Format: Alternating user and chatbot messages.  
+- Example:  
 
-These image files are basically logos that are displayed on the chatbot interface.
+---
 
-Installation Guide
+### 5. `Logo.png` & `Logo2.png`  
+Logos used in the chatbot interface.  
 
-Prerequisites
+---
 
-Python 3.10 or higher installed on your system.
-A Gmail account for email alerts. Enable App Passwords in your Gmail account settings.
+## ⚙️ Installation Guide  
 
-Steps to Install
+### ✅ Prerequisites  
+- **Python 3.10+** installed on your system.  
+- A **Gmail account** for email alerts (with **App Passwords enabled**).  
 
-download the files to your local system.
-Navigate to the project directory in your terminal:
+---
 
-
-Install the required dependencies:
-
-pip install -r requirements.txt
-
-Gmail Configuration
-Replace the EMAIL_ADDRESS and EMAIL_PASSWORD in app.py with your Gmail address and App Password.
-Replace ALERT_EMAIL with the email address where you want to receive alerts.
-
-How to Run the Chatbot
-
-Start the application:
-
-And run: streamlit run app.py
-
-Open the URL provided in the terminal (usually http://localhost:8501/).
-Logging In and Registering
-New users should first register by clicking the "Register" button.
-Existing users can log in with their username and password.
-Chat Interface
-After logging in, users can start chatting with the chatbot.
-Chat history is saved automatically and can be viewed using the "View Chat History" button.
-
-Features
-
-Login/Register System
-Security: Passwords are securely hashed and stored in users.txt.
-Chatbot Persona
-The chatbot's personality is defined in persona.txt. Customize this file to change how the chatbot interacts with users.
-Emergency Alert System
-The chatbot detects self-harm-related keywords in user inputs and sends an alert email to the configured address.
-Chat History
-Saves each user's chat history in history_<username>.txt.
-Videos and Resources
-The app includes helpful YouTube videos about mental health and meditation.
+### 🔽 Steps to Install  
+1. **Download or Clone this Repository**  
+ ```bash
+ git clone https://github.com/yourusername/MUNKind-Chatbot.git
+ cd MUNKind-Chatbot
