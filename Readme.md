@@ -69,5 +69,5 @@ Logos used in the chatbot interface.
 ### 🔽 Steps to Install  
 1. **Download or Clone this Repository**  
  ```bash
- git clone https://github.com/yourusername/MUNKind-Chatbot.git
+ git clone https://github.com/fawazdar2196/MUNKind-Chatbot.git
  cd MUNKind-Chatbot
